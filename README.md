@@ -1,17 +1,18 @@
 # ARS-OS: A Self-Learning Autonomous Strategy Agent Using Reinforcement Learning
 
-The Autonomous Race Strategy Operating System (ARS-OS) is a self-learning AI system designed to make optimal race strategy decisions during a simulated race.
+The Autonomous Race Strategy Operating System (ARS-OS) is a self-learning AI system that uses reinforcement learning to make strategic decisions in a simulated race environment.
 
-The system continuously receives race environment data, including car telemetry, track conditions, competitor positions, and tire and fuel status. This information is passed to a deep learning–based reinforcement learning agent, which acts as the decision-making brain of the system.
+The system is designed to model race strategy as a sequential decision-making problem. At each step of a race, the agent observes the current race state — including factors such as tire wear, fuel level, and race progress — and selects an optimal strategy to maximize long-term performance.
 
-Based on the current race state, the agent selects strategic actions such as:
+Using a deep reinforcement learning approach, the agent learns to make decisions such as:
+
  - When to perform a pit stop
 
- - How to manage tire and fuel usage
+ - How to balance aggressive versus conservative driving
 
- - Whether to drive aggressively or conservatively
+ - How to manage tire and fuel usage over the course of a race
 
-These actions are executed in the race environment, and the system receives feedback in the form of rewards, such as improved lap times, better race positions, and efficient resource usage.
+Each action is executed within the simulated environment, and the agent receives feedback in the form of rewards based on race performance, resource efficiency, and strategic outcomes.
 
-Over multiple races, the agent learns from experience, continuously improving its strategy to achieve better overall race performance. The final outputs of the system include lap time trends, pit stop strategies, tire and fuel usage analysis, and overall race outcome metrics.
+Through repeated interaction with the environment across multiple simulated races, the agent improves its decision-making policy over time. The final system demonstrates how autonomous agents can learn effective high-level strategies under uncertainty without relying on pre-existing datasets.
 
