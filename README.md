@@ -5,12 +5,11 @@ The Autonomous Race Strategy Operating System (ARS-OS) is a self-learning AI sys
 The system continuously receives race environment data, including car telemetry, track conditions, competitor positions, and tire and fuel status. This information is passed to a deep learning–based reinforcement learning agent, which acts as the decision-making brain of the system.
 
 Based on the current race state, the agent selects strategic actions such as:
+ - When to perform a pit stop
 
-When to perform a pit stop
+ - How to manage tire and fuel usage
 
-How to manage tire and fuel usage
-
-Whether to drive aggressively or conservatively
+ - Whether to drive aggressively or conservatively
 
 These actions are executed in the race environment, and the system receives feedback in the form of rewards, such as improved lap times, better race positions, and efficient resource usage.
 
